@@ -3,6 +3,7 @@
     --eucalyptus: #227B53;
     --valencia: #cf3131;
     --cobalt: #1935C1;
+    --neon-yellow: #FAED00;
 }
 
 * {
@@ -93,14 +94,13 @@ section {
     font-size: 3.8em;
 }
 
-
 .welcome-screen p {
     color: var(--cobalt);
     font-size: 1.2em;
     margin-bottom: 0;
 }
 
-.welcome-screen p > a {
+.welcome-screen p > a { /* The 'Blog' and 'About' links */
     color: var(--cobalt);
     text-decoration: none;
     font-size: 1.4em;
@@ -115,4 +115,27 @@ section {
 .temp-page {
     color: var(--cobalt);
     text-align: center;
+}
+
+/*
+ * Some custom variables for the AOS Library 
+ */
+[data-aos][data-aos][data-aos-delay='4500'].aos-animate, 
+body[data-aos-delay='4500'] [data-aos].aos-animate {
+	transition-delay: 4.5s;
+}
+
+[data-aos][data-aos][data-aos-delay='5000'].aos-animate, 
+body[data-aos-delay='5000'] [data-aos].aos-animate {
+	transition-delay: 5s;
+}
+
+[data-aos][data-aos][data-aos-delay='5500'].aos-animate, 
+body[data-aos-delay='5500'] [data-aos].aos-animate {
+	transition-delay: 5.5s;
+}
+
+[data-aos][data-aos][data-aos-delay='7000'].aos-animate, 
+body[data-aos-delay='7000'] [data-aos].aos-animate {
+	transition-delay: 7s;
 }
