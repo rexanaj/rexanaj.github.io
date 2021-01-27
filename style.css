@@ -1,3 +1,6 @@
+/*
+ * Frequently used colours
+ */
 :root {
     --oatmeal: #F8F5EF;
     --eucalyptus: #227B53;
@@ -6,13 +9,20 @@
     --neon-yellow: #FAED00;
 }
 
+
+
+/*
+ * Default website font with fallbacks
+ */
 * {
     padding: 0;
-    font-family: 'Fahkwang', sans-serif;
+    font-family: 'Fahkwang', Arial, Helvetica, sans-serif;
 }
 
+
+
 /* 
- * The fun changing background 
+ * The fun dynamic background 
  */
 section {
     width: 100%;
@@ -30,9 +40,7 @@ section {
     100% { background-position: 0% 50%; }
 }
 
-.js-stop-animation {
-    display: none;
-}
+
 
 /* 
  * Spinny logo
@@ -119,8 +127,10 @@ section {
     text-align: center;
 }
 
+
+
 /*
- * Some custom variables for the AOS Library 
+ * Some custom variables for the AOS library 
  */
 [data-aos][data-aos][data-aos-delay='4000'].aos-animate, 
 body[data-aos-delay='4000'] [data-aos].aos-animate {
