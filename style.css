@@ -1,7 +1,7 @@
 :root {
     --oatmeal: #F8F5EF;
     --eucalyptus: #227B53;
-    --valencia: #d63535;
+    --valencia: #cf3131;
     --cobalt: #1935C1;
 }
 
@@ -32,6 +32,49 @@ section {
 
 
 /* 
+ * Spinny logo
+ */
+ @keyframes spin {
+    from {
+        transform: rotateY(0deg);
+        moz-transform: rotateY(0deg); /* Firefox */
+        ms-transform: rotateY(0deg); /* Microsoft Browsers */
+    }
+    to {
+        transform: rotateY(360deg);
+        moz-transform: rotateY(360deg); /* Firefox */
+        ms-transform: rotateY(360deg); /* Microsoft Browsers */
+    }
+}
+
+@-webkit-keyframes spin{
+    from { -webkit-transform: rotateY(0deg); }
+    to { -webkit-transform: rotateY(360deg); }
+}
+
+#logo {
+    width: 96px; 
+    height: 96px;
+    top: 10%;
+    left: 10%;
+    position: fixed;
+}
+
+#logo:hover {
+    animation-name: spin;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 0.75s;
+
+    -webkit-animation-name: spin;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-duration: 0.75s;
+}
+
+
+
+/* 
  * The welcome screen!
  */
 
@@ -57,7 +100,7 @@ section {
     margin-bottom: 0;
 }
 
-.welcome-screen p > a{
+.welcome-screen p > a {
     color: var(--cobalt);
     text-decoration: none;
     font-size: 1.4em;

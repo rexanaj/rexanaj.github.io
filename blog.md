@@ -4,4 +4,4 @@ title: Blog
 permalink: /blog/
 ---
 
-<h3>Coming soon...</h3>
+<h3>Stay tuned</h3>
