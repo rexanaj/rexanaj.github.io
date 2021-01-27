@@ -30,7 +30,9 @@ section {
     100% { background-position: 0% 50%; }
 }
 
-
+.js-stop-animation {
+    display: none;
+}
 
 /* 
  * Spinny logo
@@ -120,6 +122,11 @@ section {
 /*
  * Some custom variables for the AOS Library 
  */
+[data-aos][data-aos][data-aos-delay='4000'].aos-animate, 
+body[data-aos-delay='4000'] [data-aos].aos-animate {
+     transition-delay: 4s;
+}
+
 [data-aos][data-aos][data-aos-delay='4500'].aos-animate, 
 body[data-aos-delay='4500'] [data-aos].aos-animate {
 	transition-delay: 4.5s;
@@ -130,12 +137,7 @@ body[data-aos-delay='5000'] [data-aos].aos-animate {
 	transition-delay: 5s;
 }
 
-[data-aos][data-aos][data-aos-delay='5500'].aos-animate, 
-body[data-aos-delay='5500'] [data-aos].aos-animate {
-	transition-delay: 5.5s;
-}
-
-[data-aos][data-aos][data-aos-delay='7000'].aos-animate, 
-body[data-aos-delay='7000'] [data-aos].aos-animate {
-	transition-delay: 7s;
+[data-aos][data-aos][data-aos-delay='6500'].aos-animate, 
+body[data-aos-delay='6500'] [data-aos].aos-animate {
+	transition-delay: 6.5s;
 }
