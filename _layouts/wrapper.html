@@ -1,3 +1,8 @@
+<!-- 
+    Wrapper for the site
+    Incl.: favicon, logo, fonts, Bootstrap and Google Analytics
+-->
+
 <html>
 <head>
     <meta charset="UTF-8">
@@ -11,19 +16,21 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M1J4E9TQ9"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-4M1J4E9TQ9');
-    </script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-4M1J4E9TQ9');
+        </script>
 
 </head>
-<body onload="document.body.className += ' loaded';" class="load-spin">
-    <section>
+<body>
+    <header class="header">
         <a href="/index.html">
             <img id="logo" src="../assets/img/logo-blue.png" alt="logo">
         </a>
+    </header>
+
+    <section>
         {{ content }}
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

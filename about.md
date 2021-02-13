@@ -4,4 +4,6 @@ title: About
 permalink: /about/
 ---
 
-<h3>Coming soon...</h3>
+<h2>Hey, you.</h2>
+<p>I'm Rexana, a second-year software engineering student at UNSW.</p>
+<p>Right now, there's not much happening on this site, but stay tuned!</p>
